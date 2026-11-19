@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Farm IoT</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Kanit:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="stage" id="stage">
+
+    <header class="title-box">
+      <h1>Smart Farm IoT</h1>
+    </header>
+
+    <section class="sensor s1" data-key="temp">
+      <div class="card">
+        <span class="value" id="value-temp">25</span>
+        <span class="unit">°C</span>
+      </div>
+      <div class="label">อุณหภูมิ</div>
+      <div class="toggle" role="switch" aria-checked="false" aria-label="สวิตช์อุณหภูมิ" tabindex="0">
+        <span class="knob"></span>
+      </div>
+    </section>
+
+    <section class="sensor s2" data-key="humidity">
+      <div class="card">
+        <span class="value" id="value-humidity">60</span>
+        <span class="unit">%</span>
+      </div>
+      <div class="label">ความชื้น</div>
+      <div class="toggle" role="switch" aria-checked="false" aria-label="สวิตช์ความชื้น" tabindex="0">
+        <span class="knob"></span>
+      </div>
+    </section>
+
+    <section class="sensor s3" data-key="light">
+      <div class="card">
+        <span class="value" id="value-light">100</span>
+        <span class="unit">cd</span>
+      </div>
+      <div class="label">ค่าแสง</div>
+      <div class="toggle" role="switch" aria-checked="false" aria-label="สวิตช์ค่าแสง" tabindex="0">
+        <span class="knob"></span>
+      </div>
+    </section>
+
+    <section class="sensor s4" data-key="water">
+      <div class="card">
+        <span class="value" id="value-water">10</span>
+        <span class="unit">cm.</span>
+      </div>
+      <div class="label">ระดับน้ำ</div>
+      <div class="toggle" role="switch" aria-checked="false" aria-label="สวิตช์ระดับน้ำ" tabindex="0">
+        <span class="knob"></span>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
